@@ -1,0 +1,40 @@
+Open Clode Principle - open for extension but closed for modifications.
+->http://www.oodesign.com/open-close-principle.html
+Dependency inversion principle - high level classes are not working directly with low level classes
+->http://www.oodesign.com/dependency-inversion-principle.html
+Single Responsibility Principle - A class should have only one reason to change.
+
+
+some design pattern using Open Close principle: Decorator, Factory method, observer
+
+
+
+Tests
+Data
+Actions
+Interfaces
+Check Pictures
+
+IEntityType
+ - EntityType
+ - treeName
+- folderCreatingType
+ + CreateTreePath(String path)
+
+
+TestType implement IEntityType
+DataType implement IEntityType
+ActionType implement IEntityType
+InterfaceType implement IEntityType
+CheckPictureType implement IEntityType
+
+
+FactoryEntityType
+ + createEntityType(String type): IEntityType 
+
+
+
+
+
+
+
